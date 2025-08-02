@@ -2,16 +2,6 @@
 // For more information: https://material.angular.dev/guide/theming
 @use '@angular/material' as mat;
 
-html {
-  @include mat.theme((color: (theme-type: light,
-        primary: mat.$azure-palette,
-        tertiary: mat.$blue-palette,
-      ),
-      typography: Roboto,
-      density: 0,
-    ));
-}
-
 /* You can add global styles to this file, and also import other style files */
 
 html,
@@ -30,4 +20,15 @@ body {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+
+:root{
+  @include mat.theme((
+    color:(
+      primary: mat.$rose-palette,// secundary se puede poner pero vine basicamente en el primary ahora (se puede cambiar)
+      tertiary: mat.$orange-palette // El accent de antes 
+    ),
+    typography: Roboto, // se puede seleccionar un font o poner un mapa de fonts
+    density: 0 // densidad de los componentes de angular material mas espaciados o mas compactos
+  ));
 }
