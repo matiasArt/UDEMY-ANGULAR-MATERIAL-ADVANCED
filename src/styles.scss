@@ -10,6 +10,7 @@ body {
 }
 
 body {
+  color-scheme: light;
   padding: 1rem;
   margin: 0;
   font-family: Robot,"Helvetica Neue", sans-serif;
@@ -26,10 +27,11 @@ body {
 :root{
   @include mat.theme((
     color:(
-      primary: mat.$rose-palette,// secundary se puede poner pero vine basicamente en el primary ahora (se puede cambiar)
-      tertiary: mat.$orange-palette // El accent de antes 
+      primary: mat.$azure-palette,// secundary se puede poner pero vine basicamente en el primary ahora (se puede cambiar)
+      tertiary: mat.$orange-palette, // El accent de antes
+      theme-type:light
     ),
     typography: Roboto, // se puede seleccionar un font o poner un mapa de fonts
-    density: 0 // densidad de los componentes de angular material mas espaciados o mas compactos
+    density: -3 // densidad de los componentes de angular material mas espaciados o mas compactos
   ));
 }
