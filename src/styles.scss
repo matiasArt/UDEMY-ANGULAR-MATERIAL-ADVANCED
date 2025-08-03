@@ -35,3 +35,15 @@ body {
     density: -3 // densidad de los componentes de angular material mas espaciados o mas compactos
   ));
 }
+
+.theme-1{
+  @include mat.theme((
+    color: mat.$spring-green-palette
+  ))
+}
+
+.theme-2 {
+  @include mat.theme((
+    color: mat.$rose-palette
+  ))
+}
